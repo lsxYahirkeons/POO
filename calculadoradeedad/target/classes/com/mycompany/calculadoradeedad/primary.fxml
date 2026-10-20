@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.calculadoradeedad.PrimaryController">
+   <children>
+      <Label fx:id="lbl1" text="FECHA DE NACIMIENTO" />
+      <TextArea fx:id="texta" prefHeight="22.0" prefWidth="200.0" promptText="dd/mm/aaaa" />
+      <Button fx:id="btn1" onAction="#calcular" text="CALCULAR" />
+      <TextField fx:id="textf" />
+      <Button fx:id="bnt2" onAction="#limpiar" text="LIMPIAR" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
