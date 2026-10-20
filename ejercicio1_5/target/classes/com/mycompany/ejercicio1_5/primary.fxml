@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ejercicio1_5.PrimaryController">
+    <children>
+        <HBox alignment="CENTER" spacing="30.0">
+            <children>
+                <GridPane hgap="10.0" vgap="10.0">
+                    <children>
+                        <Label fx:id="lbl1" text="Alimentación" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAlimentacion" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                        <Label fx:id="lbl2" text="Refrigerios" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtRefrigerios" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                        <Label fx:id="lbl3" text="Transporte" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtTransporte" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                        <Label fx:id="lbl4" text="Telefonía" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtTelefonia" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                        <Label fx:id="lbl5" text="Otros" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                        <TextField fx:id="txtOtros" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    </children>
+                </GridPane>
+                <VBox spacing="10.0">
+                    <children>
+                        <Label fx:id="lbl6" text="Estadísticas" style="-fx-font-weight: bold;" />
+                        
+                        <Label fx:id="lbl7" text="Total semanal" />
+                        <TextField fx:id="txtTotal" editable="false" prefWidth="120.0" />
+
+                        <Label fx:id="lbl8" text="Gasto más alto" />
+                        <TextField fx:id="txtGastoAlto" editable="false" prefWidth="120.0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="15.0">
+            <children>
+                <Button fx:id="btn1" onAction="#calcular" text="Calcular estadísticas" />
+                <Button fx:id="btn2" onAction="#limpiar" text="Limpiar" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
